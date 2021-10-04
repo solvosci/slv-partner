@@ -1,0 +1,1 @@
+* In ``_name_search`` method for ``res.partner`` improve duplicates removal strategy.
