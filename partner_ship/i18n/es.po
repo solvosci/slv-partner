@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_ship
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-06 09:16+0000\n"
+"PO-Revision-Date: 2021-10-06 11:18+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+
+#. module: partner_ship
+#: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_kanban_ship
+msgid ""
+"<i class=\"fa fa-ship fa-2x position-absolute\" style=\"right: 10px;\" attrs="
+"\"{'invisible': [('ship_name', '=', False)]}\" title=\"Ship Icon\"/>"
+msgstr ""
+"<i class=\"fa fa-ship fa-2x position-absolute\" style=\"right: 10px;\" attrs="
+"\"{'invisible': [('ship_name', '=', False)]}\" title=\"Icono Barco\"/>"
+
+#. module: partner_ship
+#: model:ir.model,name:partner_ship.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: partner_ship
+#: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_search_ship
+msgid "Not Ships"
+msgstr "No es barco"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_users__ship
+msgid "Ship"
+msgstr "Barco"
+
+#. module: partner_ship
+#: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_form_ship
+msgid "Ship Data"
+msgstr "Datos del barco"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship_features
+#: model:ir.model.fields,field_description:partner_ship.field_res_users__ship_features
+msgid "Ship Features"
+msgstr "Características del barco"
+
+#. module: partner_ship
+#: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship_name
+#: model:ir.model.fields,field_description:partner_ship.field_res_users__ship_name
+#: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_form_ship
+msgid "Ship Name"
+msgstr "Nombre del barco"
+
+#. module: partner_ship
+#: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_search_ship
+msgid "Ships"
+msgstr "Es barco"
