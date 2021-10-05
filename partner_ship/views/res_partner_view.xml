@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_partner_search_ship" model="ir.ui.view">
+        <field name="name">res.partner.search (ship)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="ship_name" />
+                <field name="ship_features" />
+            </xpath>
+            <xpath expr="//filter[@name='type_company']" position="after">
+                <separator/>
+                <filter string="Ships" name="type_ship" domain="[('ship', '=', True)]"/>
+                <filter string="Not Ships" name="type_not_ship" domain="[('ship', '=', False)]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_form_ship" model="ir.ui.view">
+        <field name="name">res.partner.form (ship)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='parent_id']/parent::div" position="after">
+                <div class="o_row d-flex">
+                    <label for="ship" style="font-size: 16px;"/>
+                    <field name="ship" />
+                    <field name="ship_name" style="font-size: 16px;" placeholder="Ship Name" attrs="{'invisible': [('ship','=',False)], 'required': [('ship','=',True)]}"/>
+                </div>
+            </xpath>
+            <xpath expr="//notebook/page[@name='contact_addresses']" position="before">
+                <page name="ship_data" string="Ship Data" autofocus="autofocus" attrs="{'invisible': [('ship','=',False)]}">
+                    <field name="ship_features"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_kanban_ship" model="ir.ui.view">
+        <field name="name">res.partner.kanban (ship)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view" />
+        <field name="arch" type="xml">
+        <field name="type"/>
+            <xpath expr="//field[@name='display_name']/parent::strong" position="attributes">
+                <attribute name="style">width: 80%;</attribute>>
+            </xpath>
+            <xpath expr="//field[@name='display_name']/parent::strong" position="after">
+                <field name="ship_name" invisible="1"/>
+                <i 
+                    class="fa fa-ship fa-2x position-absolute" 
+                    style="right: 10px;"
+                    attrs="{'invisible': [('ship_name', '=', False)]}"
+                    title="Ship Icon"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_tree_ship" model="ir.ui.view">
+        <field name="name">res.partner.tree (ship)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="ship" optional="show"/>
+                <field name="ship_name" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
