@@ -30,7 +30,7 @@
                 </div>
             </xpath>
             <xpath expr="//notebook/page[@name='contact_addresses']" position="before">
-                <page name="ship_data" string="Ship Data" autofocus="autofocus" attrs="{'invisible': [('ship','=',False)]}">
+                <page name="ship_data" string="Ship Data" autofocus="autofocus">
                     <field name="ship_features"/>
                 </page>
             </xpath>
