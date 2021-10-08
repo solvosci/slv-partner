@@ -23,7 +23,6 @@ class ResPartner(models.Model):
     def _compute_ship_fields(self):
         for ship in self.filtered(lambda x: not x.ship):
             ship.ship_name = False
-            ship.ship_features = False
 
     @api.depends("ship_name")
     def _compute_display_name(self):

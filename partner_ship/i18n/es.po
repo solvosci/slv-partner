@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-06 09:16+0000\n"
-"PO-Revision-Date: 2021-10-06 11:18+0200\n"
+"PO-Revision-Date: 2021-10-08 08:26+0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgid ""
 "\"{'invisible': [('ship_name', '=', False)]}\" title=\"Ship Icon\"/>"
 msgstr ""
 "<i class=\"fa fa-ship fa-2x position-absolute\" style=\"right: 10px;\" attrs="
-"\"{'invisible': [('ship_name', '=', False)]}\" title=\"Icono Barco\"/>"
+"\"{'invisible': [('ship_name', '=', False)]}\" title=\"Icono Buque\"/>"
 
 #. module: partner_ship
 #: model:ir.model,name:partner_ship.model_res_partner
@@ -49,33 +49,33 @@ msgstr "Última modificación en"
 #. module: partner_ship
 #: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_search_ship
 msgid "Not Ships"
-msgstr "No es barco"
+msgstr "No es buque"
 
 #. module: partner_ship
 #: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship
 #: model:ir.model.fields,field_description:partner_ship.field_res_users__ship
 msgid "Ship"
-msgstr "Barco"
+msgstr "Buque"
 
 #. module: partner_ship
 #: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_form_ship
 msgid "Ship Data"
-msgstr "Datos del barco"
+msgstr "Datos del buque"
 
 #. module: partner_ship
 #: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship_features
 #: model:ir.model.fields,field_description:partner_ship.field_res_users__ship_features
 msgid "Ship Features"
-msgstr "Características del barco"
+msgstr "Características del buque"
 
 #. module: partner_ship
 #: model:ir.model.fields,field_description:partner_ship.field_res_partner__ship_name
 #: model:ir.model.fields,field_description:partner_ship.field_res_users__ship_name
 #: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_form_ship
 msgid "Ship Name"
-msgstr "Nombre del barco"
+msgstr "Nombre del buque"
 
 #. module: partner_ship
 #: model_terms:ir.ui.view,arch_db:partner_ship.view_res_partner_search_ship
 msgid "Ships"
-msgstr "Es barco"
+msgstr "Es buque"
