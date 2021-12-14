@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form (in partner_contact_person)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="child_ids" position="before">
+                <group>
+                    <field
+                        name="contact_person_id" 
+                        attrs="{'invisible': [('is_company','=',False)]}"
+                        domain="[('parent_id','=',id)]"
+                    />
+                </group>
+            </field>
+        </field>
+    </record>
+    <record id="view_partner_tree" model="ir.ui.view">
+        <field name="name">res.partner.tree (in partner_contact_person)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field
+                    name="contact_person_name" 
+                    optional="hide"
+                />
+                <field
+                    name="contact_person_email" 
+                    optional="hide"
+                />
+            </field>
+        </field>
+    </record>
+    <record id="view_res_partner_filter" model="ir.ui.view">
+        <field name="name">res.partner.select (in partner_contact_person)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="contact_person_id" />
+            </field>
+            <filter name="inactive" position="before">
+                <filter
+                    string="Company Without Contact Person"
+                    name="company_without_person"
+                    domain="[('is_company','=',True), ('contact_person_id','=',False)]"
+                />
+                <filter
+                    string="Company With Contact Person"
+                    name="company_with_person"
+                    domain="[('is_company','=',True), ('contact_person_id','!=',False)]"
+                />
+                <separator/>
+            </filter>
+        </field>
+    </record>
+    <record id="res_partner_kanban_view" model="ir.ui.view">
+        <field name="name">res.partner.kanban (in partner_contact_person)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view" />
+        <field name="arch" type="xml">
+            <field name="type" position="after">
+                <field name="contact_person_name" />
+            </field>
+            <xpath expr="//div[hasclass('oe_kanban_details')]//ul" position="inside">
+                <li
+                    t-if="record.contact_person_name.raw_value"
+                    class="o_text_overflow">
+                        Contact person:
+                        <field name="contact_person_name"/>
+                </li>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
