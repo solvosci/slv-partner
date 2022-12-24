@@ -1,0 +1,32 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_vat_required
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-24 10:50+0000\n"
+"PO-Revision-Date: 2022-12-24 10:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_vat_required
+#: model:ir.model,name:partner_vat_required.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_vat_required
+#: model:ir.model,name:partner_vat_required.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: partner_vat_required
+#: code:addons/partner_vat_required/models/res_partner.py:0
+#, python-format
+msgid "VAT is required for the contact"
+msgstr "El NIF es obligatorio para el contacto"
