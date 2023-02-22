@@ -50,4 +50,6 @@ class ResPartner(models.Model):
             # added by "purchase", when creating RFQ
             "reminder_date_before_receipt",
             "receipt_reminder_email",
+            # added by "auth_signup", when e.g. sending an invoice
+            "signup_token", "signup_type", "signup_expiration",
         ]
