@@ -8,10 +8,9 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     @api.model
-    def _name_search(self, name, args=None, operator="ilike", limit=100, name_get_uid=None):
-        res = super(ResPartner, self)._name_search(
-            name, args=args, operator=operator, limit=limit, name_get_uid=name_get_uid
-        )
+    def name_search(self, name="", args=None, operator="ilike", limit=100):
+        res = super(ResPartner, self).name_search(
+            name, args=args, operator=operator, limit=limit)
         if name:
             domain = [
                 ("vat", operator, name),
