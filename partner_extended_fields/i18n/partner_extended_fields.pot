@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_extended_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-08 08:33+0000\n"
+"PO-Revision-Date: 2025-05-08 08:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_extended_fields
+#: model:ir.model,name:partner_extended_fields.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: partner_extended_fields
+#: model_terms:ir.ui.view,arch_db:partner_extended_fields.view_partner_tree
+msgid "Container"
+msgstr ""
+
+#. module: partner_extended_fields
+#: model:ir.model.fields,field_description:partner_extended_fields.field_res_partner__has_container
+#: model:ir.model.fields,field_description:partner_extended_fields.field_res_users__has_container
+msgid "Has Container"
+msgstr ""
+
+#. module: partner_extended_fields
+#: model_terms:ir.ui.view,arch_db:partner_extended_fields.view_res_partner_filter
+msgid "With Container"
+msgstr ""
+
+#. module: partner_extended_fields
+#: model_terms:ir.ui.view,arch_db:partner_extended_fields.view_res_partner_filter
+msgid "Without Container"
+msgstr ""
