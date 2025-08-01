@@ -34,12 +34,12 @@ msgstr "Contacto"
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_partner__contact_person_id
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_users__contact_person_id
 msgid "Contact Person"
-msgstr "Persona de contacto"
+msgstr "Pers. de contacto"
 
 #. module: partner_contact_person
 #: model_terms:ir.ui.view,arch_db:partner_contact_person.res_partner_kanban_view
 msgid "Contact person:"
-msgstr "Persona de contacto:"
+msgstr "Pers. de contacto:"
 
 #. module: partner_contact_person
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_partner__contact_person_email

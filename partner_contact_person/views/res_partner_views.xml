@@ -10,7 +10,7 @@
                 <group>
                     <field
                         name="contact_person_id" 
-                        attrs="{'invisible': [('is_company','=',False)]}"
+                        invisible="not is_company"
                         domain="[('parent_id','=',id)]"
                     />
                 </group>
