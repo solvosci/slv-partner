@@ -7,10 +7,10 @@ from odoo import models, api
 class ResUsers(models.Model):
     _inherit = "res.users"
 
-    @api.model
-    def create(self, vals):
+    @api.model_create_multi
+    def create(self, vals_list):
         """
         Prevent required VAT for contact linked with user
         """
-        users = self.with_context(skip_vat_required=True)
-        return super(ResUsers, users).create(vals)
+        self = self.with_context(skip_vat_required=True)
+        return super().create(vals_list)
