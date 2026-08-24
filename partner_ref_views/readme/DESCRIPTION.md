@@ -1,0 +1,1 @@
+Improves search & tree views adding Reference field
