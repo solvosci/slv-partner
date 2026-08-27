@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-14 11:29+0000\n"
-"PO-Revision-Date: 2021-12-14 11:29+0000\n"
+"POT-Creation-Date: 2025-10-16 06:35+0000\n"
+"PO-Revision-Date: 2025-10-16 06:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -37,21 +37,21 @@ msgid "Contact Person"
 msgstr "Pers. de contacto"
 
 #. module: partner_contact_person
-#: model_terms:ir.ui.view,arch_db:partner_contact_person.res_partner_kanban_view
-msgid "Contact person:"
-msgstr "Pers. de contacto:"
-
-#. module: partner_contact_person
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_partner__contact_person_email
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_users__contact_person_email
-msgid "Email"
-msgstr "Email"
+msgid "Contact Person Email"
+msgstr "Email de la pers. de contacto"
 
 #. module: partner_contact_person
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_partner__contact_person_name
 #: model:ir.model.fields,field_description:partner_contact_person.field_res_users__contact_person_name
-msgid "Name"
-msgstr "Nombre"
+msgid "Contact Person Name"
+msgstr "Nombre de la pers. de contacto"
+
+#. module: partner_contact_person
+#: model_terms:ir.ui.view,arch_db:partner_contact_person.res_partner_kanban_view
+msgid "Contact person:"
+msgstr "Persona de contacto:"
 
 #. module: partner_contact_person
 #: model:ir.model.fields,help:partner_contact_person.field_res_partner__contact_person_id

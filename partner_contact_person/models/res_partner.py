@@ -14,5 +14,5 @@ class ResPartner(models.Model):
         domain="[('is_company','=',False)]",
         copy=False,
     )
-    contact_person_name = fields.Char(related="contact_person_id.name")
-    contact_person_email = fields.Char(related="contact_person_id.email")
+    contact_person_name = fields.Char(related="contact_person_id.name", string="Contact Person Name")
+    contact_person_email = fields.Char(related="contact_person_id.email", string="Contact Person Email")
